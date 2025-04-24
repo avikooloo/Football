@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Football.com</title>
+</head>
+<body>
+   <div class="container">
+        <header>
+            <a href="" class="logo"><img src="assets/img/football_logo.png"/></a>
+            <div class="left">
+                <button class="icon_search"></button>
+                <button class="btn btn_m register" onclick="openPopup('registerPopup')">Register</button>
+                <button class="btn btn_m login" onclick="openPopup('loginPopup')">Login</button>
+            </div>
+        </header>
+        <div class="popup_w" id="registerPopup">
+            <div class="popup">
+                <div class="btn_w"><button class="close_btn" onclick="closePopup('registerPopup')"></button></div>
+                <div class="title">
+                    <div class="txt_xl">Welcome Back!</div>
+                    <p>Log In to your Maybets  Account!</p>
+                </div>
+                <form action="">
+                    <ul>
+                        <li>
+                            <label for="">Email Address</label>
+                            <div class="input_w"><input type="text" placeholder="Enter your email"></div>
+                        </li>
+                        <li>
+                            <label for="">Password</label>
+                            <div class="input_w"><input type="text" placeholder="Enter your password"></div>
+                        </li>
+                        <li>
+                            <label for="">Confirm Password </label>
+                            <div class="input_w "><input type="text" placeholder="Confirm Password"></div>
+                        </li>
+                        <li>
+                            <div class="details"><input type="checkbox"><span>am over 18 and I accept the <a href="#">Privacy Policy</a> and <a href="#">Terms and Conditions</a></span></div>
+                            <!--<button class="btn btn_l">Create Account</button>-->
+                            <a href="landing_page.html" class="btn_l for_presentation">Create Account</a>
+                            <div class="details"><span>Already have an member ? <a href="#">Login here</a></span></div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="popup_w" id="loginPopup">
+            <div class="popup">
+                <div class="btn_w"><button class="close_btn" onclick="closePopup('loginPopup')"></button></div>
+                <div class="title">
+                    <div class="txt_xl">Welcome Back!</div>
+                    <p>Log In to your Maybets  Account!</p>
+                </div>
+                <form action="">
+                    <ul>
+                        <li>
+                            <label for="">Email Address</label>
+                            <div class="input_w"><input type="text" placeholder="Enter your email"></div>
+                        </li>
+                        <li>
+                            <label for="">Password</label>
+                            <div class="input_w"><input type="text" placeholder="Enter your password"></div>
+                            <div class="password_option">
+                                <label for="me"><input type="checkbox" name="" id="me">Remember Me</label>
+                                <a href="#">Forgot Password</a>
+                            </div>
+                        </li>
+                        <li>
+                            <!--<button class="btn_l">Login</button>-->
+                            <a href="landing_page.html" class="btn_l for_presentation">Login</a>
+                        </li>
+                        <li><div class="details"><span>Don't have an account? <a href="#">Sign up here</a></span></div></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+   </div>
+    <script>
+    function openPopup(popupId) {
+        document.getElementById(popupId).style.display = "flex";
+    }
+    function closePopup(popupId) {
+        document.getElementById(popupId).style.display = "none";
+    }
+    </script>
+</body>
+</html>
