@@ -345,19 +345,6 @@ p {
   line-height: var(--base8);
 }
 
-.btn {
-  border-radius: var(--base1);
-  position: relative;
-}
-.btn_m {
-  line-height: 38px;
-  font-size: var(--txt_m);
-}
-.btn_l {
-  line-height: var(--base10);
-  font-family: var(--txt_semibold);
-}
-
 .pop_up_w {
   position: fixed;
   bottom: 0;
@@ -369,11 +356,25 @@ p {
   font-size: var(--txt_m);
 }
 
+.btn {
+  border-radius: var(--base1);
+  position: relative;
+}
 .btn_m {
   text-align: center;
   border-radius: var(--base1);
   cursor: pointer;
   font-size: var(--txt_m);
+  padding-left: var(--base1);
+  padding-right: var(--base1);
+}
+.btn_l {
+  line-height: var(--base10);
+  font-family: var(--txt_semibold);
+}
+
+button.btn_m {
+  line-height: var(--base9);
 }
 
 .btn_green_outline, .btn_outline {

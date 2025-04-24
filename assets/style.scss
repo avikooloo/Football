@@ -298,18 +298,6 @@ p{
         line-height:var(--base8);
     }
 }
-.btn{
-    border-radius: var(--base1);
-    position: relative;
-    &_m{
-        line-height: 38px;
-        font-size: var(--txt_m);
-    }
-    &_l{
-        line-height: var(--base10);
-        font-family: var(--txt_semibold);
-    }
-}
 //BETSLIP
 .pop_up_w{
     position: fixed;
@@ -322,11 +310,26 @@ p{
     font-size: var(--txt_m);
 }
 //BUTTONS
-.btn_m{
-    text-align: center;
+.btn{
     border-radius: var(--base1);
-    cursor: pointer;
-    font-size: var(--txt_m);
+    position: relative;
+    &_m{
+        text-align: center;
+        border-radius: var(--base1);
+        cursor: pointer;
+        font-size: var(--txt_m);
+        padding-left: var(--base1);
+        padding-right: var(--base1);
+    }
+    &_l{
+        line-height: var(--base10);
+        font-family: var(--txt_semibold);
+    }
+}
+button{
+    &.btn_m{
+        line-height: var(--base9);
+    }
 }
 .btn_green_outline,.btn_outline{
     border: 1px solid var(--clr-green);
