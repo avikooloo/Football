@@ -9,309 +9,82 @@
 <body>
    <div class="container">
         <header>
-            <a href="" class="menu_icon"><div class="open-x"></div></a>
+            <a href="" class="logo"><img src="assets/img/football_logo.png"/></a>
             <div class="left">
-                <a href="search_page.html" class="icon_search"></a>
-                <div class="deposit_w">
-                    <div><span>USD<i class="icon_chevron_down"></i></span>199.00</div>
-                    <a class="btn btn_m" onclick="openPopup('loginPopup')">Login</a>
-                </div>
+                <button class="icon_search"></button>
+                <button class="btn btn_m register" onclick="openPopup('registerPopup')">Register</button>
+                <button class="btn btn_m login" onclick="openPopup('loginPopup')">Login</button>
             </div>
         </header>
-        <div class="content_w">
-            <img src="assets/img/Slider.png" alt="">
-            <nav>
-                <a href="#"><i class="icon_football"></i>Football</a>
-                <a href="#"><i class="icon_live"></i>Live</a>
-                <a href="#"><i class="icon_virtual"></i>Virtual</a>
-                <a href="#"><i class="icon_casino"></i>Casino</a>
-                <a href="#"><i class="icon_code"></i>Code</a>
-                <a href="#"><i class="icon_virtual"></i>More</a>
-            </nav>
-        </div>
-        <div class="cards_w">
-            <a href="#"><img src="assets/img/star.png"/> Favorites</a>
-            <a href="#"><img src="assets/img/today-game.png"/>Today’s<br>Football</a>
-            <a href="#"><img src="assets/img/three.png"/>Football in <br>Next 3 hours</a>
-            <a href="#"><img src="assets/img/star2.png"/>UEFA <br>Champions</a>
-        </div>
-        <div class="content_w">
-            <div class="featured_games pad">
-                <div class="league">
-                    <button class="active"><img src="assets/img/laliga.png"><div>La liga</div></button>
-                    <button><img src="assets/img/EPL.png"></button>
-                    <button><img src="assets/img/Budesliga.png"></button>
-                    <button><img src="assets/img/serieA.png"></button>
-                    <button><img src="assets/img/laliga.png"></button>
-                    <button><img src="assets/img/uefa-champions-league.png"></button>
-                    <button><img src="assets/img/UEFA_logo.png"></button>
+        <div class="popup_w" id="registerPopup">
+            <div class="popup">
+                <div class="btn_w"><button class="close_btn" onclick="closePopup('registerPopup')"></button></div>
+                <div class="title">
+                    <div class="txt_xl">Welcome Back!</div>
+                    <p>Log In to your Maybets  Account!</p>
                 </div>
-                <div class="game_w">
-                    <div class="game">
-                        <div class="title">
-                            <img src="assets/img/Hot.png" alt="">
-                            <p>Spain - La Liga Football League</p>
-                        </div>
-                        <ul class="details">
-                            <li><div><img src="assets/img/valencia.png"></div>Valencia CF</li>
-                            <li><div>19:00 | Todays</div>18:00pm</li>
-                            <li><div><img src="assets/img/Madrid.png"></div>Real Madrid</li>
-                        </ul>
-                        <div class="odds">
-                            <button id="active"><span>1</span><span>3.55</span></button>
-                            <button><span>X</span><span>3.56</span></button>
-                            <button><span>2</span><span>2.20</span></button>
-                        </div>
-                    </div>
-                    <div class="game">
-                        <div class="title">
-                            <img src="assets/img/Hot.png" alt="">
-                            <p>Spain - La Liga Football League</p>
-                        </div>
-                        <ul class="details">
-                            <li><div><img src="assets/img/valencia.png"></div>Valencia CF</li>
-                            <li><div>19:00 | Todays</div>18:00pm</li>
-                            <li><div><img src="assets/img/Madrid.png"></div>Real Madrid</li>
-                        </ul>
-                        <div class="odds">
-                            <button id="active"><span>1</span><span>3.55</span></button>
-                            <button><span>X</span><span>3.56</span></button>
-                            <button><span>2</span><span>2.20</span></button>
-                        </div>
-                    </div>
-                    <div class="game">
-                        <div class="title">
-                            <img src="assets/img/Hot.png" alt="">
-                            <p>Spain - La Liga Football League</p>
-                        </div>
-                        <ul class="details">
-                            <li><div><img src="assets/img/valencia.png"></div>Valencia CF</li>
-                            <li><div>19:00 | Todays</div>18:00pm</li>
-                            <li><div><img src="assets/img/Madrid.png"></div>Real Madrid</li>
-                        </ul>
-                        <div class="odds">
-                            <button id="active"><span>1</span><span>3.55</span></button>
-                            <button><span>X</span><span>3.56</span></button>
-                            <button><span>2</span><span>2.20</span></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="live_pad pad">
-                <div class="content">
-                    <div class="header">
-                        <div class="left"><img src="assets/img/flame.png"> Live</div>
-                        <button>Football</button>
-                        <button>Basketball</button>
-                        <button>Tennis</button>
-                        <button>Rugby</button>
-                    </div>
-                    <div class="markets_w">
-                        <div class="markets">
-                            <button id="highlight">1X2</button>
-                            <button>Ov/un</button>
-                            <button>Double Chance</button>
-                            <button>G/N</button>
-                            <button>Team to Score</button>
-                            <button>HandCap</button>
-                        </div>
-                    </div>
-                    <div class="date">
-                        <div>14/11 Thursday</div>
-                        <ul>
-                            <li>1</li>
-                            <li>X</li>
-                            <li>2</li>
-                        </ul>
-                    </div>
-                    <ul class="match">
+                <form action="">
+                    <ul>
                         <li>
-                            <div class="league"><img src="assets/img/live_alert.png"><span>Feb, 22:00</span><span>English Premier League</span></div>
+                            <label for="">Email Address</label>
+                            <div class="input_w"><input type="text" placeholder="Enter your email"></div>
                         </li>
                         <li>
-                            <div class="team">
-                                <div><span>Aston Villa FC</span><span>3</span></div>
-                                <div><span>Manchester United</span><span>1</span></div>
-                            </div>
-                            <div class="odds">
-                                <button id="highlight">3.74</button><button>3.74</button><button><i class="icon_lock"></i></button>
-                            </div>
+                            <label for="">Password</label>
+                            <div class="input_w"><input type="text" placeholder="Enter your password"></div>
                         </li>
                         <li>
-                            <div class="info"><i class="icon_dots"></i><span>+217</span></div>
-                            <i class="icon_stats-chart"></i>
+                            <label for="">Confirm Password </label>
+                            <div class="input_w "><input type="text" placeholder="Confirm Password"></div>
+                        </li>
+                        <li>
+                            <div class="details"><input type="checkbox"><span>am over 18 and I accept the <a href="#">Privacy Policy</a> and <a href="#">Terms and Conditions</a></span></div>
+                            <!--<button class="btn btn_l">Create Account</button>-->
+                            <a href="landing_page.html" class="btn_l for_presentation">Create Account</a>
+                            <div class="details"><span>Already have an member ? <a href="#">Login here</a></span></div>
                         </li>
                     </ul>
-                    <ul class="match">
-                        <li>
-                            <div class="league"><img src="assets/img/live_alert.png"><span>Feb, 22:00</span><span>English Premier League</span></div>
-                        </li>
-                        <li>
-                            <div class="team">
-                                <div><span>Aston Villa FC</span><span>3</span></div>
-                                <div><span>Manchester United</span><span>1</span></div>
-                            </div>
-                            <div class="odds">
-                                <button id="highlight">3.74</button><button>3.74</button><button><i class="icon_lock"></i></button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info"><i class="icon_dots"></i><span>+217</span></div>
-                            <i class="icon_stats-chart"></i>
-                        </li>
-                    </ul>
-                    <ul class="match">
-                        <li>
-                            <div class="league"><img src="assets/img/live_alert.png"><span>Feb, 22:00</span><span>English Premier League</span></div>
-                        </li>
-                        <li>
-                            <div class="team">
-                                <div><span>Aston Villa FC</span><span>3</span></div>
-                                <div><span>Manchester United</span><span>1</span></div>
-                            </div>
-                            <div class="odds">
-                                <button id="highlight">3.74</button><button>3.74</button><button><i class="icon_lock"></i></button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info"><i class="icon_dots"></i><span>+217</span></div>
-                            <i class="icon_stats-chart"></i>
-                        </li>
-                    </ul>
-                </div>
-                <div class="more"><a href="#">View All Scheduled Games<i class="icon_arrow-right"></i></a></div>
-                
-            </div>
-            <div class="upcoming_pad pad">
-                <div class="content">
-                    <div class="header">
-                        <div class="left">
-                            <label class="dropdown">
-                                <div class="dd-button">Dropdown</div>
-                                <input type="checkbox" class="dd-input" id="test">
-                                <ul class="dd-menu">
-                                    <li>Next 6 Hours</li>
-                                    <li>Today</li>
-                                    <li>Tomorrow</li>
-                                    <li>Tuesday</li>
-                                </ul>
-                            </label>
-                        </div>
-                        <button>Football</button>
-                        <button>Basketball</button>
-                        <button>Tennis</button>
-                        <button>Rugby</button>
-                    </div>
-                    <div class="markets_w">
-                        <div class="markets">
-                            <button id="highlight">1X2</button>
-                            <button>Ov/un</button>
-                            <button>Double Chance</button>
-                            <button>G/N</button>
-                            <button>Team to Score</button>
-                            <button>HandCap</button>
-                        </div>
-                    </div>
-                    <div class="date">
-                        <div>14/11 Thursday</div>
-                        <ul>
-                            <li>1</li>
-                            <li>X</li>
-                            <li>2</li>
-                        </ul>
-                    </div>
-                    <ul class="match">
-                        <li>
-                            <div class="league"><span>Feb, 22:00</span><span>English Premier League</span></div>
-                        </li>
-                        <li>
-                            <div class="team">
-                                <div><span>Aston Villa FC</span><span>3</span></div>
-                                <div><span>Manchester United</span><span>1</span></div>
-                            </div>
-                            <div class="odds">
-                                <button id="highlight">3.74</button><button>3.74</button><button><i class="icon_lock"></i></button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info"><i class="icon_dots"></i><span>+217</span></div>
-                            <i class="icon_stats-chart"></i>
-                        </li>
-                    </ul>
-                    <ul class="match">
-                        <li>
-                            <div class="league"><span>Feb, 22:00</span><span>English Premier League</span></div>
-                        </li>
-                        <li>
-                            <div class="team">
-                                <div><span>Aston Villa FC</span><span>3</span></div>
-                                <div><span>Manchester United</span><span>1</span></div>
-                            </div>
-                            <div class="odds">
-                                <button id="highlight">3.74</button><button>3.74</button><button><i class="icon_lock"></i></button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info"><i class="icon_dots"></i><span>+217</span></div>
-                            <i class="icon_stats-chart"></i>
-                        </li>
-                    </ul>
-                    <ul class="match">
-                        <li>
-                            <div class="league"><span>Feb, 22:00</span><span>English Premier League</span></div>
-                        </li>
-                        <li>
-                            <div class="team">
-                                <div><span>Aston Villa FC</span><span>3</span></div>
-                                <div><span>Manchester United</span><span>1</span></div>
-                            </div>
-                            <div class="odds">
-                                <button id="highlight">3.74</button><button>3.74</button><button><i class="icon_lock"></i></button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info"><i class="icon_dots"></i><span>+217</span></div>
-                            <i class="icon_stats-chart"></i>
-                        </li>
-                    </ul>
-                </div>
-                <div class="more"><a href="#">View All Scheduled Games<i class="icon_arrow-right"></i></a></div>
-                
+                </form>
             </div>
         </div>
-        <div class="casion_w">
-            <a href=""><img src="assets/img/game1.png" alt=""></a>
-            <a href=""><img src="assets/img/game2.png" alt=""></a>
-            <a href=""><img src="assets/img/game3.png" alt=""></a>
-            <a href=""><img src="assets/img/game1.png" alt=""></a>
-            <a href=""><img src="assets/img/game2.png" alt=""></a>
-            <a href=""><img src="assets/img/game3.png" alt=""></a>
-        </div>
-        <footer>
-            <a href="#" class="btn btn_l">Back to Top<i class="icon_chevron_top"></i></a>
-            <div class="paybill">Mpesa Paybill: <span>498098</span></div>
-            <img src="assets/img/age.png" alt="">
-            <div class="responsibly">Play Responsibly <br>Not for persons under the age of 18 years.</div>
-            <p>Betting is addictive and can be psychologically harmful. Bobets  is licensed by the Gaming Commission of Kenya.</p>
-            <ul>
-                <li><a href="#">Terms & conditions</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-            <div class="sm">
-                <a href="#"><i class="icon_whatapp"></i></a>
-                <a href="#"><i class="icon_facebook"></i></a>
-                <a href="#"><i class="icon_instagram"></i></a>
-                <a href="#"><i class="icon_twitter-alt"></i></a>
+        <div class="popup_w" id="loginPopup">
+            <div class="popup">
+                <div class="btn_w"><button class="close_btn" onclick="closePopup('loginPopup')"></button></div>
+                <div class="title">
+                    <div class="txt_xl">Welcome Back!</div>
+                    <p>Log In to your Maybets  Account!</p>
+                </div>
+                <form action="">
+                    <ul>
+                        <li>
+                            <label for="">Email Address</label>
+                            <div class="input_w"><input type="text" placeholder="Enter your email"></div>
+                        </li>
+                        <li>
+                            <label for="">Password</label>
+                            <div class="input_w"><input type="text" placeholder="Enter your password"></div>
+                            <div class="password_option">
+                                <label for="me"><input type="checkbox" name="" id="me">Remember Me</label>
+                                <a href="#">Forgot Password</a>
+                            </div>
+                        </li>
+                        <li>
+                            <!--<button class="btn_l">Login</button>-->
+                            <a href="landing_page.html" class="btn_l for_presentation">Login</a>
+                        </li>
+                        <li><div class="details"><span>Don't have an account? <a href="#">Sign up here</a></span></div></li>
+                    </ul>
+                </form>
             </div>
-            <div class="copyright">BoBets. © 2025 All rights reserved.</div>
-        </footer>
-        <div class="menu">
-            <a href="landing_page.html" class="active"><i class="icon_matches"></i>Matches</a>
-            <a href="menu.html"><i class="icon_menu"></i>AZ Menu</a>
-            <a href="#"><div class="count_w">0</div></i>Betslip</a>
-            <a href="mybets.html"><i class="icon_casino"></i>MyBet</a>
-            <a href="my_account.html"><i class="icon_me"></i>Me</a>
         </div>
-   </div> 
+   </div>
+    <script>
+    function openPopup(popupId) {
+        document.getElementById(popupId).style.display = "flex";
+    }
+    function closePopup(popupId) {
+        document.getElementById(popupId).style.display = "none";
+    }
+    </script>
 </body>
 </html>
