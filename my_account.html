@@ -7,9 +7,9 @@
     <title>Football.com</title>
 </head>
 <body>
-    <div class="pop_up_w">
+    <div id="pop_up_w" class="pop_up_w">
             <div class="top">
-                <div>Balance: KES7.32<div class="close icon_close"></div></div>
+                <div>Balance: KES7.32<div class="close icon_close" onclick="hidePopup()"></div></div>
                 <div class="accept_odds">Accepted Odds Changes<button><i class="icon_trash"></i>Remove All</button></div>
             </div>
             
@@ -153,10 +153,11 @@
         <div class="menu">
             <a href="index.html"><i class="icon_matches"></i>Matches</a>
             <a href="menu.html"><i class="icon_menu"></i>AZ Menu</a>
-            <a href="#"><div class="count_w">0</div></i>Betslip</a>
+            <a href="#" onclick="togglePopup()"><div class="count_w">0</div></i>Betslip</a>
             <a href="mybets.html"><i class="icon_casino"></i>MyBet</a>
             <a href="my_account.html" class="active"><i class="icon_me"></i>Me</a>
         </div>
-   </div> 
+   </div>
+   <script src="assets/js/popup.js"></script>
 </body>
 </html>

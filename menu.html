@@ -7,6 +7,82 @@
     <title>Football.com</title>
 </head>
 <body>
+    <div id="pop_up_w" class="pop_up_w">
+            <div class="top">
+                <div>Balance: KES7.32<div class="close icon_close" onclick="hidePopup()"></div></div>
+                <div class="accept_odds">Accepted Odds Changes<button><i class="icon_trash"></i>Remove All</button></div>
+            </div>
+            
+            <div class="tabs_w">
+                <div class="active">Sports Open Bets (0)</div>
+                <div>Bet History</div>
+            </div>
+            <div class="wrapper game_w">
+                <div class="game">
+                    <div class="detail">
+                        <div><img src="assets/img/ball.png"></div>
+                        <div><span>Real Madrid</span>VS<span>Arsenal</span></div>
+                    </div>
+                    <ul>
+                        <li><i class="icon_close_circled"></i><img src="assets/img/audio.png"><span>1x2</span><span>Home</span></li>
+                        <li><span>1.6</span></li>
+                    </ul>
+                </div>
+                <div class="game">
+                    <div class="detail">
+                        <div><img src="assets/img/ball.png"></div>
+                        <div><span>Real Madrid</span>VS<span>Arsenal</span></div>
+                    </div>
+                    <ul>
+                        <li><i class="icon_close_circled"></i><img src="assets/img/audio.png"><span>1x2</span><span>Home</span></li>
+                        <li><span>1.6</span></li>
+                    </ul>
+                    <ul>
+                        <li><i class="icon_close_circled"></i><img src="assets/img/audio.png"><span>1x2</span><span>Home</span></li>
+                        <li><span>1.6</span></li>
+                    </ul>
+                </div>
+                <div class="game">
+                    <div class="detail">
+                        <div><img src="assets/img/ball.png"></div>
+                        <div><span>Real Madrid</span>VS<span>Arsenal</span></div>
+                    </div>
+                    <ul>
+                        <li><i class="icon_close_circled"></i><img src="assets/img/audio.png"><span>1x2</span><span>Home</span></li>
+                        <li><span>1.6</span></li>
+                    </ul>
+                </div>
+            </div>
+        <div class="bottom">
+            <div class="wrapper">
+                <ul>
+                    <li>Stake</li>
+                    <li>2 X KES 50</li>
+                </ul>
+                <ul>
+                    <li>Total Stake </li>
+                    <li>Kes 86.96</li>
+                </ul>
+                <ul>
+                    <li>Boost Your Wins</li>
+                    <li>ss</li>
+                </ul>
+                <ul>
+                    <li>Total Odds </li>
+                    <li>X112.48 ~ 592.00</li>
+                </ul>
+                <ul>
+                    <li>Max Multi Bonus(3%)</li>
+                    <li>KES 146.72 ~ KES 772.20</li>
+                </ul>
+                <ul>
+                    <li>Max Win</li>
+                    <li>KES 21,227.28</li>
+                </ul>
+                <button class="btn_m btn_green">Place bet KES 100</button>
+            </div>
+        </div>
+    </div>
    <div class="container">
         <header>
             <a href="" class="menu_icon"><div class="open-x"></div></a>
@@ -86,10 +162,11 @@
         <div class="menu">
             <a href="index.html"><i class="icon_matches"></i>Matches</a>
             <a href="menu.html" class="active"><i class="icon_menu"></i>AZ Menu</a>
-            <a href="#"><div class="count_w">0</div></i>Betslip</a>
+            <a href="#" onclick="togglePopup()"><div class="count_w">0</div></i>Betslip</a>
             <a href="mybets.html"><i class="icon_casino"></i>MyBet</a>
             <a href="my_account.html"><i class="icon_me"></i>Me</a>
         </div>
    </div> 
+   <script src="assets/js/popup.js"></script>
 </body>
 </html>

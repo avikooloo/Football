@@ -301,12 +301,21 @@ p{
 //BETSLIP
 .pop_up_w{
     position: fixed;
-    bottom: 0;
+    transform: translateY(200px);
     z-index: 1000;
     width: 100%;
     background-color: var(--clr-blu-10);
     color: var(--clr-white);
     font-size: var(--txt_m);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    bottom: 0;
+    &.show {
+        transform: translateY(0);
+        display: block;
+        opacity: 1;
+    }
     .wrapper{
         padding: var(--base4);
     }
